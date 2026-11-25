@@ -1,0 +1,30 @@
+###
+GET http://127.0.0.1:8000/product/
+Accept: application/json
+###
+POST http://127.0.0.1:8000/product/
+Content-Type: application/json
+
+{ 
+    "product_name":"pen",
+    "product_code":"114",
+    "catagory":"education",
+    "price":"5",
+    "stock_quantity":50
+}
+###
+GET http://127.0.0.1:8000/product/2/
+Accept: application/json
+###
+PUT  http://127.0.0.1:8000/product/2/
+Content-Type: application/json
+
+{ 
+    "product_name":"pen",
+    "product_code":"124",
+    "catagory":"education",
+    "price":"8",
+    "stock_quantity":50
+}
+###
+DELETE http://127.0.0.1:8000/product/2/
